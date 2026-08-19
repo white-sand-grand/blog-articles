@@ -3,7 +3,7 @@ title: 现代前端性能优化实践
 description: 分享我在前端性能优化方面的实践经验
 pubDate: 2026-07-17
 category: learning
-tags: ['性能优化', 'Web开发', '最佳实践']
+tags: ['性能优化', '最佳实践', '技术']
 draft: false
 ---
 

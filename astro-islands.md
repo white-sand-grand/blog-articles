@@ -3,7 +3,7 @@ title: 深入理解 Astro Islands 架构
 description: 探索 Astro 的 Islands 架构如何提升网站性能
 pubDate: 2026-07-15
 category: learning
-tags: ['Astro', '性能优化', 'Web开发']
+tags: ['性能优化', '技术']
 ---
 
 # 深入理解 Astro Islands 架构

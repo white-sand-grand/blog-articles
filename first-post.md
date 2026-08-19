@@ -3,7 +3,7 @@ title: 欢迎来到我的技术博客
 description: 这是我的第一篇文章，使用 Astro 4 + Tailwind CSS 构建的博客
 pubDate: 2026-07-14
 category: learning
-tags: ['Astro', 'Tailwind CSS', '技术']
+tags: ['Tailwind CSS', '技术']
 ---
 
 # 欢迎来到我的技术博客

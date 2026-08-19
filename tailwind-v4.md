@@ -3,7 +3,7 @@ title: Tailwind CSS 4 新特性解析
 description: 探索 Tailwind CSS 4 带来的革命性改进
 pubDate: 2026-07-16
 category: learning
-tags: ['Tailwind CSS', 'CSS', '前端']
+tags: ['Tailwind CSS', '技术']
 ---
 
 # Tailwind CSS 4 新特性解析

@@ -3,7 +3,7 @@ title: TypeScript 5.0 新特性详解
 description: 深入了解 TypeScript 5.0 带来的创新功能
 pubDate: 2026-07-18
 category: learning
-tags: ['TypeScript', 'JavaScript', '类型系统']
+tags: ['TypeScript', '技术']
 draft: false
 ---
 
