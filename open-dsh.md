@@ -21,8 +21,8 @@ draft: false
 
 这里放一个地址先：
 [github链接: dsh-plugin-doctor](https://github.com/white-sand-grand/dsh-plugin-doctor)
-```
-# dsh-plugin-doctor(以下为删减版README)
+
+### dsh-plugin-doctor(以下为删减版README)
 
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
@@ -32,14 +32,14 @@ draft: false
 
 当前版本：`1.0.0`。插件要求 Node.js `>=22.19`，默认只读，不会自行安装、卸载或启动 Web UI。
 
-## 安装
+#### 安装
 
 在运行 DSH 的同一环境中执行：
 
 dsh plugin --profile web add github:white-sand-grand/dsh-plugin-doctor
 dsh web
-```
-## 能做什么
+
+#### 能做什么
 
 | 用户需求 | 工具行为 |
 | --- | --- |
@@ -51,8 +51,8 @@ dsh web
 | 查看实际使用情况 | 扫描本地已落盘 session 日志，按 `dsh.tools` 统计调用量、会话数和最近使用时间 |
 | 查看插件总体格局 | 生成 Mermaid 关系图，并按 `core`、`active`、`idle`、`review` 分层 |
 | 安装前了解官方已知问题 | 在搜索、推荐或收到仓库链接准备安装时，询问是否检查官方仓库的未关闭 Issue，并显示相关链接和风险 |
-```
-## 六个工具
+
+#### 六个工具
 
 - `plugin_community_search`：社区插件搜索与过滤。
 - `plugin_similarity_analyze`：相似度、重复组和不可替代性分析。
@@ -63,18 +63,18 @@ dsh web
 
 Agent 会根据问题自动选择工具。
 
-## 安装前官方 Issue 检查
+#### 安装前官方 Issue 检查
 
 当用户通过社区搜索寻找可安装插件、请求推荐插件，或直接发送多个仓库链接要求安装时，插件会先询问是否检查这些官方仓库的未关闭 Issue。检查内容包括 Issue 标题和正文与用户需求或故障现象的匹配度，并提供官方链接，例如递归文件监视导致 Web UI 卡顿的未解决报告。
 
 用户明确选择“不检查本会话”后，本会话不会再次弹出这个提醒；下一次新会话会重新询问。用户取消弹窗或当前环境没有交互能力时，插件会说明检查未完成，不会把它误报成“没有已知问题”。Issue API 暂时不可用只影响提醒信息，不会绕过 `plugin_install_guard` 的失败关闭规则。
 
 
-## 直接提问与使用 doctor 的区别
+#### 直接提问与使用 doctor 的区别
 
 直接对 DSH 说“帮我找个插件”时，模型通常只能根据已有上下文给出一般性建议，不能稳定地搜索社区、读取本地包元数据、量化相似度或检查 Cordis 注册冲突。安装多个仓库时也可能跳过预检。
-```
-## 差异
+
+#### 差异
 
 | 直接提问 DSH | 使用 `dsh-plugin-doctor` |
 | --- | --- |
@@ -89,4 +89,5 @@ Agent 会根据问题自动选择工具。
 
 以后准备给这篇 blog 再补一补，准备写点技术上的思路，我对这个插件的想法就是——还不够敏捷方便，输入指令还是需要自然语言描述，准备探寻一下一些问题能否采取类似 skills 调用的方式，比如生成关系图的部分。目前我遇见的插件问题还是很多，尤其像新版本视觉发布造成一堆视觉插件的荒废，这说明版本变动同样适合加入其中进行考量
 
-以上26.8.21
+以上
+26.8.21
