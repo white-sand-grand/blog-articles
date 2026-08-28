@@ -1,10 +1,10 @@
 ---
 title: 腾讯犀牛鸟开源计划——trpc-agent-go
 description: 在 feat/eval-promptiter-regression-loop 分支上完成了一个完整的 PromptIter 回归循环示例，共 28 个文件、约 3600 行 Go 代码。
-pubDate: 2026-08-06
+pubDate: 2026-08-28
 category: opensource
 tags: ['开源', 'GitHub', 'Go']
-draft: true
+draft: false
 ---
 
 # 我的第一个大型开源项目参与经历
@@ -84,6 +84,16 @@ gate 评测，一个新加入的验收标准
 
 就是具体改什么
 
+#### 问题四：baseline prompt 文件路径解析
 
+问题是有关用户可以通过三种方式指定 baseline prompt：命令行 flag、文件路径、内置默认值。如果用户指定了一个文件路径但文件不存在的解决方案
 
+  | 做法 | 结果 |
+  | --- | --- |
+  | 文件读不到时silent fallback 到内置默认值 | 程序不中断，但 CI 场景下可能优化了错误的prompt |
+  | 文件读不到时fatal error，直接退出   | CI 里路径 typo会被立即发现，但本地开发时多了一步配置检查 |
+
+由于 CI 是机器执行，如果路径 typo 导致程序静默用了内置默认值，CI 会显示"测试通过"，导致新 prompt 根本没有被测试。自然选择第二个。
+
+## 这一篇文章因为各种原因写了我20天，有些想写的没写上，先这样吧
 
