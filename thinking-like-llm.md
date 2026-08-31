@@ -4,7 +4,7 @@ description: 突发奇想的将一些结合起来
 pubDate: 2026-08-19
 category: thoughts
 tags: ['思考']
-draft: false
+draft: true
 ---
 
 ## 背景
